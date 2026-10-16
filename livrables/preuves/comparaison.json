@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-10-16T07:53:42.867828+00:00",
+  "project": "tiwap",
+  "analysis_id_after": "88a29a71-c5bd-4a91-b22a-1772fc06ba46",
+  "task_id_after": "646baf3d-9bec-421d-ab41-7d63a1febcd1",
+  "task_status_after": "SUCCESS",
+  "issue_count_before": 51,
+  "issue_count_after": 51,
+  "new_issue_ids": [],
+  "missing_issue_ids": [],
+  "status_changes": {},
+  "metrics_before": {
+    "coverage": "0.0",
+    "bugs": "5",
+    "duplicated_lines_density": "6.2",
+    "code_smells": "16",
+    "software_quality_reliability_issues": "21",
+    "ncloc": "2368",
+    "software_quality_maintainability_issues": "7",
+    "software_quality_security_issues": "30",
+    "vulnerabilities": "30",
+    "security_hotspots": "0"
+  },
+  "metrics_after": {
+    "coverage": "0.0",
+    "bugs": "5",
+    "duplicated_lines_density": "6.2",
+    "code_smells": "16",
+    "software_quality_reliability_issues": "21",
+    "ncloc": "2368",
+    "software_quality_maintainability_issues": "7",
+    "software_quality_security_issues": "30",
+    "vulnerabilities": "30",
+    "security_hotspots": "0"
+  },
+  "sql_rule_issues_before": [],
+  "sql_rule_issues_after": [],
+  "tests_before": {
+    "run": 4,
+    "failures": 2
+  },
+  "tests_after": {
+    "run": 4,
+    "failures": 0
+  }
+}

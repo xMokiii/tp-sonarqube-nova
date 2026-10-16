@@ -1,0 +1,11 @@
+test_existing_user (test_sql_injection.SQLInjectionTests.test_existing_user) ... ok
+test_injection_cannot_return_other_users (test_sql_injection.SQLInjectionTests.test_injection_cannot_return_other_users) ... ok
+test_quote_is_treated_as_data (test_sql_injection.SQLInjectionTests.test_quote_is_treated_as_data) ... ok
+test_unknown_user (test_sql_injection.SQLInjectionTests.test_unknown_user) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK
+
+Code de sortie : 0

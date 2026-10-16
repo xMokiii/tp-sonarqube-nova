@@ -1,0 +1,7 @@
+.env
+.env.*
+.scannerwork/
+__pycache__/
+
+# Depot TIWAP gere separement ; correction et preuves incluses dans le TP.
+/TIWAP/

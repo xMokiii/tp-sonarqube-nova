@@ -1,0 +1,2947 @@
+{
+  "collected_at": "2026-10-16T07:51:54.609901+00:00",
+  "server": {
+    "id": "243B8A4D-AaFAQ23wuoO0BJ0FONJK",
+    "version": "26.10.0.133078",
+    "status": "UP"
+  },
+  "scanner_task": {
+    "task": {
+      "id": "646baf3d-9bec-421d-ab41-7d63a1febcd1",
+      "type": "REPORT",
+      "componentId": "081f885d-3dd1-4956-8c65-bbca336f317d",
+      "componentKey": "tiwap",
+      "componentName": "TIWAP",
+      "componentQualifier": "TRK",
+      "analysisId": "88a29a71-c5bd-4a91-b22a-1772fc06ba46",
+      "status": "SUCCESS",
+      "submittedAt": "2026-10-16T07:50:52+0000",
+      "submitterLogin": "admin",
+      "startedAt": "2026-10-16T07:50:54+0000",
+      "executedAt": "2026-10-16T07:51:00+0000",
+      "executionTimeMs": 6594,
+      "hasScannerContext": true,
+      "warningCount": 2,
+      "warnings": [
+        "Your code is analyzed as compatible with Python versions 3.10 through 3.14 by default. You can get a more precise analysis by setting the Python version or version range in your configuration via the parameter \"sonar.python.version\"",
+        "Missing blame information for 1 file. This may lead to some features not working correctly. Please check the analysis logs and refer to <a href=\"https://docs.sonarsource.com/sonarqube-community-build/analyzing-source-code/scm-integration/\" rel=\"noopener noreferrer\" target=\"_blank\">the documentation</a>."
+      ],
+      "infoMessages": []
+    }
+  },
+  "issues": {
+    "total": 51,
+    "p": 1,
+    "ps": 500,
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 500,
+      "total": 51
+    },
+    "effortTotal": 539,
+    "issues": [
+      {
+        "key": "274d5927-a28a-46bb-93b8-7e1bff4feebc",
+        "rule": "python:S3330",
+        "severity": "MINOR",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 848,
+        "hash": "75152a81453518dba1e77b1b7f64d9b4",
+        "textRange": {
+          "startLine": 848,
+          "endLine": 848,
+          "startOffset": 12,
+          "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure creating this cookie without the \"HttpOnly\" flag is safe.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "fastapi",
+          "django",
+          "privacy",
+          "flask",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "ccda1d0f-83d1-4dfe-8377-3232974fc861",
+        "rule": "python:S2092",
+        "severity": "MINOR",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 848,
+        "hash": "75152a81453518dba1e77b1b7f64d9b4",
+        "textRange": {
+          "startLine": 848,
+          "endLine": 848,
+          "startOffset": 12,
+          "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure creating this cookie without the \"secure\" flag is safe.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "fastapi",
+          "django",
+          "privacy",
+          "flask",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "8034c193-3b03-43fb-87f3-4c5b1aefbf01",
+        "rule": "python:S2092",
+        "severity": "MINOR",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 880,
+        "hash": "f9c04819fbef33fba516a6c7fcdf5e73",
+        "textRange": {
+          "startLine": 880,
+          "endLine": 880,
+          "startOffset": 12,
+          "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure creating this cookie without the \"secure\" flag is safe.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "fastapi",
+          "django",
+          "privacy",
+          "flask",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "b13e5f7c-0e15-4286-9dc6-5480e7f7eb1c",
+        "rule": "python:S3330",
+        "severity": "MINOR",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 880,
+        "hash": "f9c04819fbef33fba516a6c7fcdf5e73",
+        "textRange": {
+          "startLine": 880,
+          "endLine": 880,
+          "startOffset": 12,
+          "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure creating this cookie without the \"HttpOnly\" flag is safe.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "fastapi",
+          "django",
+          "privacy",
+          "flask",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "22288470-e15a-4ce3-b68c-8a9ff736df9d",
+        "rule": "python:S2092",
+        "severity": "MINOR",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 898,
+        "hash": "f9c04819fbef33fba516a6c7fcdf5e73",
+        "textRange": {
+          "startLine": 898,
+          "endLine": 898,
+          "startOffset": 12,
+          "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure creating this cookie without the \"secure\" flag is safe.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "fastapi",
+          "django",
+          "privacy",
+          "flask",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "248d49de-1ac4-4a0d-8ab3-1d4c70e06281",
+        "rule": "python:S3330",
+        "severity": "MINOR",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 898,
+        "hash": "f9c04819fbef33fba516a6c7fcdf5e73",
+        "textRange": {
+          "startLine": 898,
+          "endLine": 898,
+          "startOffset": 12,
+          "endOffset": 27
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure creating this cookie without the \"HttpOnly\" flag is safe.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "fastapi",
+          "django",
+          "privacy",
+          "flask",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "5fcbfa48-fe86-4af9-9061-e148f718b730",
+        "rule": "python:S6903",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/auth.py",
+        "project": "tiwap",
+        "line": 12,
+        "hash": "6b4da997205110638350b70ce4dfa55d",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startOffset": 23,
+          "endOffset": 38
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Don't use `datetime.datetime.utcnow` to create this datetime object.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "datetime",
+          "pitfall"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "HIGH"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "e531feec-101f-4421-a01e-8396f6592e87",
+        "rule": "python:S6903",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/auth.py",
+        "project": "tiwap",
+        "line": 29,
+        "hash": "696cb949da5ca04fcb2522122a163328",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startOffset": 23,
+          "endOffset": 38
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Don't use `datetime.datetime.utcnow` to create this datetime object.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "datetime",
+          "pitfall"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "HIGH"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "046c2a47-0908-4cf4-bd66-5d3162e960b0",
+        "rule": "python:S6903",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/auth.py",
+        "project": "tiwap",
+        "line": 30,
+        "hash": "57f00c70c8df706bbb284943e2496967",
+        "textRange": {
+          "startLine": 30,
+          "endLine": 30,
+          "startOffset": 23,
+          "endOffset": 38
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Don't use `datetime.datetime.utcnow` to create this datetime object.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "datetime",
+          "pitfall"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "HIGH"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "cbf8e560-89ae-46d7-895b-85cd2d8fd5d9",
+        "rule": "python:S5659",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/auth.py",
+        "project": "tiwap",
+        "line": 39,
+        "hash": "cf9cc02434cb2920fccaa96d11f21c6e",
+        "textRange": {
+          "startLine": 39,
+          "endLine": 39,
+          "startOffset": 77,
+          "endOffset": 104
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Don't use a JWT token without verifying its signature.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "cryptography",
+          "privacy"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "f08e9346-bc78-49e1-9d42-a18950d47c7a",
+        "rule": "python:S6903",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/auth.py",
+        "project": "tiwap",
+        "line": 48,
+        "hash": "696cb949da5ca04fcb2522122a163328",
+        "textRange": {
+          "startLine": 48,
+          "endLine": 48,
+          "startOffset": 23,
+          "endOffset": 38
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Don't use `datetime.datetime.utcnow` to create this datetime object.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "datetime",
+          "pitfall"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "HIGH"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "cbd76a46-d5d4-4eb0-9ca9-4fb953bb05b7",
+        "rule": "python:S6903",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/auth.py",
+        "project": "tiwap",
+        "line": 49,
+        "hash": "57f00c70c8df706bbb284943e2496967",
+        "textRange": {
+          "startLine": 49,
+          "endLine": 49,
+          "startOffset": 23,
+          "endOffset": 38
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Don't use `datetime.datetime.utcnow` to create this datetime object.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "datetime",
+          "pitfall"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "HIGH"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "2387f3ff-69d2-4dab-ada5-70d5a52803c0",
+        "rule": "python:S4790",
+        "severity": "CRITICAL",
+        "component": "tiwap:vulnerabilities/SQLi.py",
+        "project": "tiwap",
+        "line": 151,
+        "hash": "5c0712395b9a28c8c1b3169b332c1ab7",
+        "textRange": {
+          "startLine": 151,
+          "endLine": 151,
+          "startOffset": 23,
+          "endOffset": 26
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure that hashing data is safe here.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "cryptography",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-12-29T09:35:21+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "1feb4b91-8106-469a-95a4-1837f36cacd5",
+        "rule": "python:S1656",
+        "severity": "MAJOR",
+        "component": "tiwap:helper/mongodb_manager.py",
+        "project": "tiwap",
+        "line": 20,
+        "hash": "adfd51d8a9fc8aba40305b87355275c9",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startOffset": 21,
+          "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove or correct this useless self-assignment.",
+        "effort": "3min",
+        "debt": "3min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "convention",
+          "confusing"
+        ],
+        "creationDate": "2023-10-17T18:21:56+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "94795746-0568-4321-a7cc-88896aeb391c",
+        "rule": "python:S1656",
+        "severity": "MAJOR",
+        "component": "tiwap:helper/mongodb_manager.py",
+        "project": "tiwap",
+        "line": 40,
+        "hash": "adfd51d8a9fc8aba40305b87355275c9",
+        "textRange": {
+          "startLine": 40,
+          "endLine": 40,
+          "startOffset": 21,
+          "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove or correct this useless self-assignment.",
+        "effort": "3min",
+        "debt": "3min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "convention",
+          "confusing"
+        ],
+        "creationDate": "2023-10-17T18:21:56+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "f17f9f18-3f67-4be1-9ba4-634e9aba6b89",
+        "rule": "docker:S6471",
+        "severity": "MINOR",
+        "component": "tiwap:Dockerfile",
+        "project": "tiwap",
+        "line": 1,
+        "hash": "f2ad55f2c81b0b3ca688c4fc5acc8ca9",
+        "textRange": {
+          "startLine": 1,
+          "endLine": 1,
+          "startOffset": 0,
+          "endOffset": 15
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "The \"python\" image runs with \"root\" as the default user. Make sure it is safe here.",
+        "effort": "15min",
+        "debt": "15min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "dockerfile",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-10-17T11:34:07+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "5c0210c2-3b90-456d-a2d2-9d41780ea0ac",
+        "rule": "python:S4507",
+        "severity": "MINOR",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 913,
+        "hash": "bc34137f003fe7808347146cc212fdcb",
+        "textRange": {
+          "startLine": 913,
+          "endLine": 913,
+          "startOffset": 39,
+          "endOffset": 49
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure this debug feature is deactivated before delivering the code in production.",
+        "effort": "1min",
+        "debt": "1min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "error-handling",
+          "debug",
+          "user-experience",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-10-17T11:34:07+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "bd8fee19-c153-485e-9d79-18f0c4166fc8",
+        "rule": "python:S8392",
+        "severity": "BLOCKER",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 913,
+        "hash": "bc34137f003fe7808347146cc212fdcb",
+        "textRange": {
+          "startLine": 913,
+          "endLine": 913,
+          "startOffset": 4,
+          "endOffset": 11
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Avoid binding the application to all network interfaces.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "fastapi",
+          "least-privilege",
+          "uvicorn",
+          "flask",
+          "deployment",
+          "network"
+        ],
+        "creationDate": "2023-10-17T11:34:07+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "BLOCKER"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "088f6eb2-2b76-4a92-a136-e151e55bbac9",
+        "rule": "javascript:S2068",
+        "severity": "MAJOR",
+        "component": "tiwap:init-db.js",
+        "project": "tiwap",
+        "line": 8,
+        "hash": "de76bd3619cb5c57b2d5ded351df907e",
+        "textRange": {
+          "startLine": 8,
+          "endLine": 8,
+          "startOffset": 18,
+          "endOffset": 52
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Review this potentially hard-coded password.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "secret",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-10-17T11:34:07+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "af1e47e4-42d1-461c-90ef-d4cf8d58c91b",
+        "rule": "javascript:S2068",
+        "severity": "MAJOR",
+        "component": "tiwap:init-db.js",
+        "project": "tiwap",
+        "line": 12,
+        "hash": "ce218652a0a1a8f9905a0e818b423bf8",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startOffset": 18,
+          "endOffset": 52
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Review this potentially hard-coded password.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "secret",
+          "former-hotspot"
+        ],
+        "creationDate": "2023-10-17T11:34:07+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "1b547159-e3f6-43e7-9867-ff2d4b0a45e7",
+        "rule": "python:S4830",
+        "severity": "CRITICAL",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 731,
+        "hash": "c4d30a76acc657822de69293e3d23764",
+        "textRange": {
+          "startLine": 731,
+          "endLine": 731,
+          "startOffset": 97,
+          "endOffset": 102
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Enable server certificate validation on this SSL/TLS connection.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "cryptography",
+          "privacy",
+          "ssl"
+        ],
+        "creationDate": "2022-03-03T12:35:56+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "ddf8705b-1123-4379-92b2-2183cc01c4f9",
+        "rule": "Web:InputWithoutLabelCheck",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/ssrf.html",
+        "project": "tiwap",
+        "line": 18,
+        "hash": "46bc13838620cb5d6e7b97268617ce6d",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startOffset": 20,
+          "endOffset": 79
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Associate a valid label to this input field.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility",
+          "wcag2-a"
+        ],
+        "creationDate": "2022-03-03T12:35:56+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "58547562-2a7f-41ff-9921-072c79a3b936",
+        "rule": "python:S4830",
+        "severity": "CRITICAL",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 723,
+        "hash": "c4d30a76acc657822de69293e3d23764",
+        "textRange": {
+          "startLine": 723,
+          "endLine": 723,
+          "startOffset": 93,
+          "endOffset": 98
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Enable server certificate validation on this SSL/TLS connection.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "cryptography",
+          "privacy",
+          "ssl"
+        ],
+        "creationDate": "2022-02-13T14:31:38+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "40a22ac6-2c5c-4951-83c6-d3f233964052",
+        "rule": "python:S4830",
+        "severity": "CRITICAL",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 728,
+        "hash": "c4d30a76acc657822de69293e3d23764",
+        "textRange": {
+          "startLine": 728,
+          "endLine": 728,
+          "startOffset": 97,
+          "endOffset": 102
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Enable server certificate validation on this SSL/TLS connection.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "cryptography",
+          "privacy",
+          "ssl"
+        ],
+        "creationDate": "2022-02-13T14:31:38+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "823485c9-6369-470e-b392-ca3094171643",
+        "rule": "python:S4790",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/mongodb_manager.py",
+        "project": "tiwap",
+        "line": 45,
+        "hash": "69e86f7c434914454a40e1cb7e9f3f5d",
+        "textRange": {
+          "startLine": 45,
+          "endLine": 45,
+          "startOffset": 28,
+          "endOffset": 31
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure that hashing data is safe here.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "cryptography",
+          "former-hotspot"
+        ],
+        "creationDate": "2022-02-11T16:35:59+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "14913e29-bf87-4a01-8d96-0e3e3f3aa364",
+        "rule": "python:S2068",
+        "severity": "MAJOR",
+        "component": "tiwap:helper/mongodb_manager.py",
+        "project": "tiwap",
+        "line": 68,
+        "hash": "5340ee6a67ac527fcad07f5776b90880",
+        "textRange": {
+          "startLine": 68,
+          "endLine": 68,
+          "startOffset": 39,
+          "endOffset": 85
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "\"password\" detected here, review this potentially hard-coded credential.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "secret",
+          "former-hotspot"
+        ],
+        "creationDate": "2022-02-11T16:35:59+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "c2a7485f-fe46-4953-8ac7-1462413c47f7",
+        "rule": "python:S2068",
+        "severity": "MAJOR",
+        "component": "tiwap:helper/mongodb_manager.py",
+        "project": "tiwap",
+        "line": 69,
+        "hash": "4ea8fe5922f64488d355d82f75d93066",
+        "textRange": {
+          "startLine": 69,
+          "endLine": 69,
+          "startOffset": 38,
+          "endOffset": 84
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "\"password\" detected here, review this potentially hard-coded credential.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "secret",
+          "former-hotspot"
+        ],
+        "creationDate": "2022-02-11T16:35:59+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "65e922ff-ea7c-4e3e-806c-e97f52f93cb9",
+        "rule": "docker:S6470",
+        "severity": "CRITICAL",
+        "component": "tiwap:Dockerfile",
+        "project": "tiwap",
+        "line": 4,
+        "hash": "100bbbd94f7ee720fcd4656ef489815f",
+        "textRange": {
+          "startLine": 4,
+          "endLine": 4,
+          "startOffset": 5,
+          "endOffset": 6
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Copying recursively might inadvertently add sensitive data to the container. Make sure it is safe here.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "dockerfile",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-10-13T13:29:41+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "ed1873de-06bd-49dd-9e91-0257a4d9e4fe",
+        "rule": "Web:S6853",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/settings.html",
+        "project": "tiwap",
+        "line": 70,
+        "hash": "77a7441da6615c9148ba8ee737cfc0d4",
+        "textRange": {
+          "startLine": 70,
+          "endLine": 70,
+          "startOffset": 12,
+          "endOffset": 31
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control and have accessible text.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-10-09T16:03:43+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "5ae9ed96-0cae-4b7a-9436-e0dd62df2b5c",
+        "rule": "Web:S6853",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/blind-sql-injection.html",
+        "project": "tiwap",
+        "line": 31,
+        "hash": "8c25bc11b104e92ea14ea616010bad50",
+        "textRange": {
+          "startLine": 31,
+          "endLine": 31,
+          "startOffset": 32,
+          "endOffset": 52
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control and have accessible text.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-10-09T16:03:43+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "a0fb5b03-aa58-489d-ba82-3d5784a3a4f4",
+        "rule": "Web:S6853",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/csrf.html",
+        "project": "tiwap",
+        "line": 23,
+        "hash": "3b2d519a90a60e216c6a56baeb66af3a",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 23,
+          "startOffset": 12,
+          "endOffset": 36
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control and have accessible text.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-10-09T16:03:43+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "41ff4f4e-2a86-4ce8-8249-22b53a560b6d",
+        "rule": "Web:S6853",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/directory-traversal.html",
+        "project": "tiwap",
+        "line": 13,
+        "hash": "6a5f3451aeb230f2712fe6817c0fd9f4",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startOffset": 24,
+          "endOffset": 43
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control and have accessible text.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-10-09T16:03:43+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "ca513fdb-5daf-4995-bd58-c2616d3ea5e9",
+        "rule": "Web:S6853",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/dom-xss.html",
+        "project": "tiwap",
+        "line": 13,
+        "hash": "e23b992d5367a9983963f70c32aa0a6d",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startOffset": 24,
+          "endOffset": 43
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control and have accessible text.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-10-09T16:03:43+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "ad01d8d0-5e6e-454d-9cac-e5ed6b2b3838",
+        "rule": "Web:S6853",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/html-injection.html",
+        "project": "tiwap",
+        "line": 13,
+        "hash": "e23b992d5367a9983963f70c32aa0a6d",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startOffset": 24,
+          "endOffset": 43
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control and have accessible text.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-10-09T16:03:43+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "917940e5-2b12-4622-b3b6-7580fd81b1ae",
+        "rule": "Web:S6853",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/sensitive-data-exposure-medium.html",
+        "project": "tiwap",
+        "line": 13,
+        "hash": "8c25bc11b104e92ea14ea616010bad50",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startOffset": 24,
+          "endOffset": 44
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control and have accessible text.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-10-09T16:03:43+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "75b7de92-521d-4c02-9fe0-ccf071692675",
+        "rule": "Web:S6853",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/sql-injection.html",
+        "project": "tiwap",
+        "line": 31,
+        "hash": "8c25bc11b104e92ea14ea616010bad50",
+        "textRange": {
+          "startLine": 31,
+          "endLine": 31,
+          "startOffset": 32,
+          "endOffset": 52
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control and have accessible text.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-10-09T16:03:43+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "5526fee1-39ca-4fea-8b88-a4636683208b",
+        "rule": "Web:S6853",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/stored-html-injection.html",
+        "project": "tiwap",
+        "line": 13,
+        "hash": "e23b992d5367a9983963f70c32aa0a6d",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startOffset": 24,
+          "endOffset": 43
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control and have accessible text.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-10-09T16:03:43+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "cdbf6ed9-7ca0-49e7-80a7-b633ce9cc98d",
+        "rule": "python:S4502",
+        "severity": "CRITICAL",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 28,
+        "hash": "03aa70719e0741ef4d78a5ded8bf958d",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startOffset": 6,
+          "endOffset": 65
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure disabling CSRF protection is safe here.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "giriyash67@gmail.com",
+        "tags": [
+          "cwe",
+          "django",
+          "flask",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-09-12T12:39:10+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "f66ddb23-71ac-489f-8040-fc8d438e9063",
+        "rule": "Web:InputWithoutLabelCheck",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/insecure-file-upload.html",
+        "project": "tiwap",
+        "line": 11,
+        "hash": "618cb1348d84fb412669cad9a41365c9",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startOffset": 23,
+          "endOffset": 119
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Associate a valid label to this input field.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "giriyash67@gmail.com",
+        "tags": [
+          "accessibility",
+          "wcag2-a"
+        ],
+        "creationDate": "2021-09-11T14:33:25+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "685c676a-c947-42ee-aa1b-e694495b60d1",
+        "rule": "python:S4790",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/db_manager.py",
+        "project": "tiwap",
+        "line": 55,
+        "hash": "5c0712395b9a28c8c1b3169b332c1ab7",
+        "textRange": {
+          "startLine": 55,
+          "endLine": 55,
+          "startOffset": 19,
+          "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure that hashing data is safe here.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "sakshiaggarwal0502@gmail.com",
+        "tags": [
+          "cwe",
+          "cryptography",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-09-11T08:21:50+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "15ca62ea-737e-4d38-badb-d2dcc24d171e",
+        "rule": "Web:S5725",
+        "severity": "MINOR",
+        "component": "tiwap:templates/dashboard_layout.html",
+        "project": "tiwap",
+        "line": 19,
+        "hash": "48b0f919ec23f1e72b93238c56ff4803",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 19,
+          "startOffset": 4,
+          "endOffset": 104
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add integrity and crossorigin=\"anonymous\" attributes to this element to enforce integrity checks.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-09-10T07:47:01+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "ec3e9153-0954-4b25-abf9-8cb7c71a4faf",
+        "rule": "Web:S5725",
+        "severity": "MINOR",
+        "component": "tiwap:templates/dashboard_layout.html",
+        "project": "tiwap",
+        "line": 20,
+        "hash": "624ba9174d1825bc2477c8a8bf50c103",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startOffset": 4,
+          "endOffset": 83
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add integrity and crossorigin=\"anonymous\" attributes to this element to enforce integrity checks.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-09-10T07:47:01+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "83b701a1-1c06-442e-9f4f-e80b4509968a",
+        "rule": "Web:S5725",
+        "severity": "MINOR",
+        "component": "tiwap:templates/dashboard_layout.html",
+        "project": "tiwap",
+        "line": 21,
+        "hash": "7303cc2fd1e22ec6cc1f0f0a5c0a00b9",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startOffset": 4,
+          "endOffset": 86
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add integrity and crossorigin=\"anonymous\" attributes to this element to enforce integrity checks.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-09-10T07:47:01+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "9f6bbe36-ade9-46b1-90de-4437efa95129",
+        "rule": "python:S5247",
+        "severity": "MAJOR",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 40,
+        "hash": "88f1a6ea3624f02398092176fa00d79a",
+        "textRange": {
+          "startLine": 40,
+          "endLine": 40,
+          "startOffset": 9,
+          "endOffset": 22
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure disabling auto-escaping feature is safe here.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "django",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-08-24T12:08:06+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "cb97fb8c-d89e-4e61-83c4-d531cf3e28f5",
+        "rule": "python:S2245",
+        "severity": "MAJOR",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 760,
+        "hash": "c81a1213eb25c11fbb96dae3c529e1f8",
+        "textRange": {
+          "startLine": 760,
+          "endLine": 760,
+          "startOffset": 20,
+          "endOffset": 35
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure that using this pseudorandom number generator is safe here.",
+        "effort": "10min",
+        "debt": "10min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "cryptography",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-08-24T11:43:46+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "1cf7098b-9b1d-4c19-85bd-6fbb17a53b58",
+        "rule": "Web:S5256",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/settings.html",
+        "project": "tiwap",
+        "line": 15,
+        "hash": "846070f38199897187d52a9a4ffe473b",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startOffset": 8,
+          "endOffset": 55
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add \"<th>\" headers to this \"<table>\".",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility",
+          "wcag2-a"
+        ],
+        "creationDate": "2021-08-21T15:46:05+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "3d0c6d9e-1d9d-44e1-bbff-e2ea550a5b8c",
+        "rule": "Web:S6850",
+        "severity": "MAJOR",
+        "component": "tiwap:templates/vulnerabilities/xml-external-entities.html",
+        "project": "tiwap",
+        "line": 20,
+        "hash": "a297bb861e930038d5d31396fb39110b",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startOffset": 0,
+          "endOffset": 57
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Headings must have content and the content must be accessible by a screen reader.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "accessibility"
+        ],
+        "creationDate": "2021-08-21T08:22:53+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "ba1d3ef9-8997-4ecd-b49d-5f4b0d6663c0",
+        "rule": "Web:S5725",
+        "severity": "MINOR",
+        "component": "tiwap:templates/vulnerabilities/xml-external-entities.html",
+        "project": "tiwap",
+        "line": 24,
+        "hash": "3d9bd0f546253cf56cdc40f8ac3462ca",
+        "textRange": {
+          "startLine": 24,
+          "endLine": 24,
+          "startOffset": 0,
+          "endOffset": 102
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add integrity and crossorigin=\"anonymous\" attributes to this element to enforce integrity checks.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-08-21T08:22:53+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "959c79ab-dfa7-4966-9b05-c7ce18c388b6",
+        "rule": "python:S4790",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/db_manager.py",
+        "project": "tiwap",
+        "line": 47,
+        "hash": "5c0712395b9a28c8c1b3169b332c1ab7",
+        "textRange": {
+          "startLine": 47,
+          "endLine": 47,
+          "startOffset": 23,
+          "endOffset": 26
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Make sure that hashing data is safe here.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "cryptography",
+          "former-hotspot"
+        ],
+        "creationDate": "2021-08-04T13:02:11+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "HIGH"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "88e0f0be-8566-4e12-9d99-2d7dfff94b15",
+        "rule": "python:S6779",
+        "severity": "BLOCKER",
+        "component": "tiwap:app.py",
+        "project": "tiwap",
+        "line": 29,
+        "hash": "3746d06e6c23968e711026df03ee2769",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startOffset": 17,
+          "endOffset": 35
+        },
+        "flows": [
+          {
+            "locations": [
+              {
+                "component": "tiwap:app.py",
+                "textRange": {
+                  "startLine": 29,
+                  "endLine": 29,
+                  "startOffset": 0,
+                  "endOffset": 14
+                },
+                "msg": "Assignment to sensitive property.",
+                "msgFormattings": []
+              }
+            ]
+          }
+        ],
+        "status": "OPEN",
+        "message": "Don't disclose \"Flask\" secret keys.",
+        "effort": "30min",
+        "debt": "30min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "cwe",
+          "flask"
+        ],
+        "creationDate": "2021-07-19T13:28:53+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "VULNERABILITY",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "TRUSTWORTHY",
+        "cleanCodeAttributeCategory": "RESPONSIBLE",
+        "impacts": [
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "BLOCKER"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "24f82651-2dc5-4553-b097-edc90d232c62",
+        "rule": "python:S6903",
+        "severity": "CRITICAL",
+        "component": "tiwap:helper/auth.py",
+        "project": "tiwap",
+        "line": 13,
+        "hash": "57f00c70c8df706bbb284943e2496967",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startOffset": 23,
+          "endOffset": 38
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Don't use `datetime.datetime.utcnow` to create this datetime object.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "simardeepsngh1@gmail.com",
+        "tags": [
+          "datetime",
+          "pitfall"
+        ],
+        "creationDate": "2021-07-19T13:28:53+0000",
+        "updateDate": "2026-10-16T07:32:29+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "HIGH"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      }
+    ],
+    "components": [
+      {
+        "key": "tiwap:templates/vulnerabilities/ssrf.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "ssrf.html",
+        "longName": "templates/vulnerabilities/ssrf.html",
+        "path": "templates/vulnerabilities/ssrf.html"
+      },
+      {
+        "key": "tiwap:helper/auth.py",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "auth.py",
+        "longName": "helper/auth.py",
+        "path": "helper/auth.py"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/insecure-file-upload.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "insecure-file-upload.html",
+        "longName": "templates/vulnerabilities/insecure-file-upload.html",
+        "path": "templates/vulnerabilities/insecure-file-upload.html"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/stored-html-injection.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "stored-html-injection.html",
+        "longName": "templates/vulnerabilities/stored-html-injection.html",
+        "path": "templates/vulnerabilities/stored-html-injection.html"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/sql-injection.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "sql-injection.html",
+        "longName": "templates/vulnerabilities/sql-injection.html",
+        "path": "templates/vulnerabilities/sql-injection.html"
+      },
+      {
+        "key": "tiwap:helper/db_manager.py",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "db_manager.py",
+        "longName": "helper/db_manager.py",
+        "path": "helper/db_manager.py"
+      },
+      {
+        "key": "tiwap:templates/settings.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "settings.html",
+        "longName": "templates/settings.html",
+        "path": "templates/settings.html"
+      },
+      {
+        "key": "tiwap:vulnerabilities/SQLi.py",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "SQLi.py",
+        "longName": "vulnerabilities/SQLi.py",
+        "path": "vulnerabilities/SQLi.py"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/csrf.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "csrf.html",
+        "longName": "templates/vulnerabilities/csrf.html",
+        "path": "templates/vulnerabilities/csrf.html"
+      },
+      {
+        "key": "tiwap:app.py",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "app.py",
+        "longName": "app.py",
+        "path": "app.py"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/xml-external-entities.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "xml-external-entities.html",
+        "longName": "templates/vulnerabilities/xml-external-entities.html",
+        "path": "templates/vulnerabilities/xml-external-entities.html"
+      },
+      {
+        "key": "tiwap:init-db.js",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "init-db.js",
+        "longName": "init-db.js",
+        "path": "init-db.js"
+      },
+      {
+        "key": "tiwap:Dockerfile",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "Dockerfile",
+        "longName": "Dockerfile",
+        "path": "Dockerfile"
+      },
+      {
+        "key": "tiwap:templates/dashboard_layout.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "dashboard_layout.html",
+        "longName": "templates/dashboard_layout.html",
+        "path": "templates/dashboard_layout.html"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/dom-xss.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "dom-xss.html",
+        "longName": "templates/vulnerabilities/dom-xss.html",
+        "path": "templates/vulnerabilities/dom-xss.html"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/html-injection.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "html-injection.html",
+        "longName": "templates/vulnerabilities/html-injection.html",
+        "path": "templates/vulnerabilities/html-injection.html"
+      },
+      {
+        "key": "tiwap",
+        "enabled": true,
+        "qualifier": "TRK",
+        "name": "TIWAP",
+        "longName": "TIWAP"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/directory-traversal.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "directory-traversal.html",
+        "longName": "templates/vulnerabilities/directory-traversal.html",
+        "path": "templates/vulnerabilities/directory-traversal.html"
+      },
+      {
+        "key": "tiwap:helper/mongodb_manager.py",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "mongodb_manager.py",
+        "longName": "helper/mongodb_manager.py",
+        "path": "helper/mongodb_manager.py"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/blind-sql-injection.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "blind-sql-injection.html",
+        "longName": "templates/vulnerabilities/blind-sql-injection.html",
+        "path": "templates/vulnerabilities/blind-sql-injection.html"
+      },
+      {
+        "key": "tiwap:templates/vulnerabilities/sensitive-data-exposure-medium.html",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "sensitive-data-exposure-medium.html",
+        "longName": "templates/vulnerabilities/sensitive-data-exposure-medium.html",
+        "path": "templates/vulnerabilities/sensitive-data-exposure-medium.html"
+      }
+    ],
+    "facets": []
+  },
+  "measures": {
+    "component": {
+      "key": "tiwap",
+      "name": "TIWAP",
+      "qualifier": "TRK",
+      "measures": [
+        {
+          "metric": "coverage",
+          "value": "0.0",
+          "bestValue": false
+        },
+        {
+          "metric": "bugs",
+          "value": "5",
+          "bestValue": false
+        },
+        {
+          "metric": "duplicated_lines_density",
+          "value": "6.2",
+          "bestValue": false
+        },
+        {
+          "metric": "code_smells",
+          "value": "16",
+          "bestValue": false
+        },
+        {
+          "metric": "software_quality_reliability_issues",
+          "value": "21",
+          "bestValue": false
+        },
+        {
+          "metric": "ncloc",
+          "value": "2368"
+        },
+        {
+          "metric": "software_quality_maintainability_issues",
+          "value": "7",
+          "bestValue": false
+        },
+        {
+          "metric": "software_quality_security_issues",
+          "value": "30",
+          "bestValue": false
+        },
+        {
+          "metric": "vulnerabilities",
+          "value": "30",
+          "bestValue": false
+        },
+        {
+          "metric": "security_hotspots",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    }
+  },
+  "sql_file_measures": {
+    "component": {
+      "key": "tiwap:vulnerabilities/SQLi.py",
+      "name": "SQLi.py",
+      "qualifier": "FIL",
+      "path": "vulnerabilities/SQLi.py",
+      "language": "py",
+      "measures": [
+        {
+          "metric": "bugs",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "code_smells",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "ncloc",
+          "value": "89"
+        },
+        {
+          "metric": "vulnerabilities",
+          "value": "1",
+          "bestValue": false
+        }
+      ]
+    }
+  },
+  "quality_gate": {
+    "projectStatus": {
+      "status": "OK",
+      "conditions": [
+        {
+          "status": "OK",
+          "metricKey": "new_coverage",
+          "comparator": "LT",
+          "errorThreshold": "80",
+          "actualValue": "0.0"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_duplicated_lines_density",
+          "comparator": "GT",
+          "errorThreshold": "3",
+          "actualValue": "0.0"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_violations",
+          "comparator": "GT",
+          "errorThreshold": "0",
+          "actualValue": "0"
+        }
+      ],
+      "ignoredConditions": true,
+      "period": {
+        "mode": "PREVIOUS_VERSION",
+        "date": "2026-10-16T07:32:29+0000"
+      },
+      "caycStatus": "compliant"
+    }
+  },
+  "python_profiles": {
+    "profiles": [
+      {
+        "key": "b6f80de6-6ada-41e6-8544-d6c8f6642793",
+        "name": "Sonar way core",
+        "language": "py",
+        "languageName": "Python",
+        "isInherited": false,
+        "isDefault": true,
+        "activeRuleCount": 232,
+        "activeDeprecatedRuleCount": 0,
+        "rulesUpdatedAt": "2026-10-15T15:54:14+0000",
+        "lastUsed": "2026-10-16T07:50:36+0000",
+        "isBuiltIn": true,
+        "actions": {
+          "edit": false,
+          "setAsDefault": false,
+          "copy": false,
+          "associateProjects": false,
+          "delete": false
+        }
+      },
+      {
+        "key": "fe197625-7c8d-4b9b-9d4d-6b7729be6a22",
+        "name": "Sonar way extended",
+        "language": "py",
+        "languageName": "Python",
+        "isInherited": false,
+        "isDefault": false,
+        "activeRuleCount": 266,
+        "activeDeprecatedRuleCount": 0,
+        "projectCount": 0,
+        "rulesUpdatedAt": "2026-10-15T15:54:24+0000",
+        "isBuiltIn": true,
+        "actions": {
+          "edit": false,
+          "setAsDefault": false,
+          "copy": false,
+          "associateProjects": false,
+          "delete": false
+        }
+      },
+      {
+        "key": "4e068edc-28f6-47ed-854e-00907eb66e08",
+        "name": "Sonar way comprehensive",
+        "language": "py",
+        "languageName": "Python",
+        "isInherited": false,
+        "isDefault": false,
+        "activeRuleCount": 407,
+        "activeDeprecatedRuleCount": 0,
+        "projectCount": 0,
+        "rulesUpdatedAt": "2026-10-15T15:54:00+0000",
+        "isBuiltIn": true,
+        "actions": {
+          "edit": false,
+          "setAsDefault": false,
+          "copy": false,
+          "associateProjects": false,
+          "delete": false
+        }
+      },
+      {
+        "key": "7849f7f2-eb5d-4b08-a1be-05a81b4980a4",
+        "name": "Sonar agentic AI",
+        "language": "py",
+        "languageName": "Python",
+        "isInherited": false,
+        "isDefault": false,
+        "activeRuleCount": 306,
+        "activeDeprecatedRuleCount": 0,
+        "projectCount": 0,
+        "rulesUpdatedAt": "2026-10-15T15:54:01+0000",
+        "isBuiltIn": true,
+        "actions": {
+          "edit": false,
+          "setAsDefault": false,
+          "copy": false,
+          "associateProjects": false,
+          "delete": false
+        }
+      }
+    ],
+    "actions": {
+      "create": false
+    }
+  },
+  "sql_rule_activation": {
+    "rule": {
+      "key": "python:S2077",
+      "repo": "python",
+      "name": "SQL queries should not be dynamically formatted",
+      "createdAt": "2026-10-15T15:53:21+0000",
+      "severity": "MAJOR",
+      "status": "READY",
+      "isTemplate": false,
+      "tags": [],
+      "sysTags": [
+        "cwe",
+        "bad-practice",
+        "former-hotspot",
+        "sql"
+      ],
+      "lang": "py",
+      "langName": "Python",
+      "params": [],
+      "defaultDebtRemFnType": "CONSTANT_ISSUE",
+      "debtRemFnType": "CONSTANT_ISSUE",
+      "type": "VULNERABILITY",
+      "defaultRemFnType": "CONSTANT_ISSUE",
+      "defaultRemFnBaseEffort": "20min",
+      "remFnType": "CONSTANT_ISSUE",
+      "remFnBaseEffort": "20min",
+      "remFnOverloaded": false,
+      "scope": "MAIN",
+      "isExternal": false,
+      "descriptionSections": [
+        {
+          "key": "root_cause",
+          "content": "<p>When SQL queries are constructed by concatenating or formatting user-supplied values directly into the query string, the structure of the query\nitself can be altered by a malicious input. This rule flags calls to SQL execution functions where the query string is built using string\nconcatenation or format operators rather than parameterized queries or prepared statements. Unlike rule <a href='/coding_rules#rule_key=python%3AS3649'>S3649</a>, this rule does not\nperform taint analysis — it flags all dynamically formatted SQL queries as a potential risk regardless of the data source.</p>\n<h3>What is the potential impact?</h3>\n<h4>SQL injection</h4>\n<p>If any part of a dynamically formatted query string originates from untrusted input, an attacker can manipulate the query to read, modify, or\ndelete data they should not have access to, bypass authentication checks, or in some configurations execute operating system commands.</p>"
+        },
+        {
+          "key": "introduction",
+          "content": "<p>Dynamically building SQL query strings can result in broken SQL syntax and open SQL injection attacks.</p>"
+        },
+        {
+          "key": "resources",
+          "content": "<h3>Articles &amp; blog posts</h3>\n<ul>\n  <li>Derived from FindSecBugs rules <a href=\"https://h3xstream.github.io/find-sec-bugs/bugs.htm#SQL_INJECTION_JPA\">Potential SQL/JPQL Injection\n  (JPA)</a>, <a href=\"https://h3xstream.github.io/find-sec-bugs/bugs.htm#SQL_INJECTION_JDO\">Potential SQL/JDOQL Injection (JDO)</a>, <a\n  href=\"https://h3xstream.github.io/find-sec-bugs/bugs.htm#SQL_INJECTION_HIBERNATE\">Potential SQL/HQL Injection (Hibernate)</a></li>\n</ul>\n<h3>Standards</h3>\n<ul>\n  <li>OWASP - <a href=\"https://owasp.org/Top10/A03_2021-Injection/\">Top 10 2021 Category A3 - Injection</a></li>\n  <li>OWASP - <a href=\"https://github.com/OWASP/Top10/blob/master/2017/en/0xa1-injection.md\">Top 10 2017 Category A1 - Injection</a></li>\n  <li>CWE - <a href=\"https://cwe.mitre.org/data/definitions/89\">CWE-89 - Improper Neutralization of Special Elements used in an SQL Command</a></li>\n  <li>CWE - <a href=\"https://cwe.mitre.org/data/definitions/943\">CWE-943 - Improper Neutralization of Special Elements in Data Query Logic</a></li>\n</ul>"
+        },
+        {
+          "key": "how_to_fix",
+          "content": "<p>The following code builds a SQL query by concatenating a value directly into the query string.</p>\n<h4>Noncompliant code example</h4>\n<p>With the Django framework:</p>\n<pre data-diff-id=\"1\" data-diff-type=\"noncompliant\">\nfrom django.db import models\nfrom django.db import connection\nfrom django.db import connections\nfrom django.db.models.expressions import RawSQL\n\nvalue = input()\n\n\nclass MyUser(models.Model):\n    name = models.CharField(max_length=200)\n\n\ndef query_my_user(request, params, value):\n    with connection.cursor() as cursor:\n        cursor.execute(\"{0}\".format(value))  # Noncompliant\n\n    # https://docs.djangoproject.com/en/2.1/ref/models/expressions/#raw-sql-expressions\n\n    RawSQL(\"select col from %s where mycol = %s and othercol = \" + value, (\"test\",))  # Noncompliant\n\n    # https://docs.djangoproject.com/en/2.1/ref/models/querysets/#extra\n\n    MyUser.objects.extra(\n        select={\n            'mycol':  \"select col from sometable here mycol = %s and othercol = \" + value}, # Noncompliant\n           select_params=(someparam,),\n        },\n    )\n</pre>\n<h4>Compliant solution</h4>\n<pre data-diff-id=\"1\" data-diff-type=\"compliant\">\nfrom django.db import models\nfrom django.db import connection\nfrom django.db import connections\nfrom django.db.models.expressions import RawSQL\n\nvalue = input()\n\n\nclass MyUser(models.Model):\n    name = models.CharField(max_length=200)\n\n\ndef query_my_user(request, params, value):\n    with connection.cursor() as cursor:\n        cursor.execute(\"SELECT * FROM mytable WHERE col = %s\", [value])\n\n    RawSQL(\"select col from %s where mycol = %s and othercol = %s\", (\"test\", value,))\n\n    MyUser.objects.extra(\n        select={\n            'mycol': \"select col from sometable where mycol = %s and othercol = %s\"},\n        select_params=(someparam, value),\n    )\n</pre>\n<h4>Noncompliant code example</h4>\n<p>With the OracleDB driver:</p>\n<p>Both the <code>oracledb</code> and <code>cx_Oracle</code> drivers are supported. The rule covers formatted SQL passed to <code>execute</code>,\n<code>executemany</code>, <code>parse</code>, <code>prepare</code>, <code>fetch_df_all</code>, and <code>fetch_df_batches</code>.</p>\n<pre data-diff-id=\"2\" data-diff-type=\"noncompliant\">\nimport oracledb\n\nvalue = input()\n\nconnection = oracledb.connect(user=\"user\", password=\"password\", dsn=\"database\")\ncursor = connection.cursor()\ncursor.execute(f\"SELECT * FROM customers WHERE name = '{value}'\")  # Noncompliant\n</pre>\n<h4>Compliant solution</h4>\n<pre data-diff-id=\"2\" data-diff-type=\"compliant\">\nimport oracledb\n\nvalue = input()\n\nconnection = oracledb.connect(user=\"user\", password=\"password\", dsn=\"database\")\ncursor = connection.cursor()\ncursor.execute(\"SELECT * FROM customers WHERE name = :name\", name=value)\n</pre>"
+        }
+      ],
+      "educationPrinciples": [],
+      "updatedAt": "2026-10-15T15:53:21+0000",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ]
+    },
+    "actives": [
+      {
+        "qProfile": "4e068edc-28f6-47ed-854e-00907eb66e08",
+        "inherit": "NONE",
+        "severity": "MAJOR",
+        "params": [],
+        "createdAt": "2026-10-15T15:54:00+0000",
+        "updatedAt": "2026-10-15T15:54:00+0000",
+        "prioritizedRule": false,
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          },
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ]
+      },
+      {
+        "qProfile": "7849f7f2-eb5d-4b08-a1be-05a81b4980a4",
+        "inherit": "NONE",
+        "severity": "MAJOR",
+        "params": [],
+        "createdAt": "2026-10-15T15:54:01+0000",
+        "updatedAt": "2026-10-15T15:54:01+0000",
+        "prioritizedRule": false,
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          },
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ]
+      },
+      {
+        "qProfile": "b6f80de6-6ada-41e6-8544-d6c8f6642793",
+        "inherit": "NONE",
+        "severity": "MAJOR",
+        "params": [],
+        "createdAt": "2026-10-15T15:54:14+0000",
+        "updatedAt": "2026-10-15T15:54:14+0000",
+        "prioritizedRule": false,
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          },
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ]
+      },
+      {
+        "qProfile": "fe197625-7c8d-4b9b-9d4d-6b7729be6a22",
+        "inherit": "NONE",
+        "severity": "MAJOR",
+        "params": [],
+        "createdAt": "2026-10-15T15:54:24+0000",
+        "updatedAt": "2026-10-15T15:54:24+0000",
+        "prioritizedRule": false,
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          },
+          {
+            "softwareQuality": "SECURITY",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    ]
+  },
+  "corrected_sql_source_sha256": "c34bc58daa2f63509ff56d41522d8e4ae578e02369237bb1d0c4bdcbeb904f8e"
+}

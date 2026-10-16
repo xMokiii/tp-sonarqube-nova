@@ -1,0 +1,172 @@
+07:50:31.099 INFO  Scanner configuration file: /opt/sonar-scanner/conf/sonar-scanner.properties
+07:50:31.104 INFO  Project root configuration file: /usr/src/sonar-project.properties
+07:50:31.129 INFO  SonarScanner CLI 8.1.0.6389
+07:50:31.137 INFO  Linux 6.6.87.2-microsoft-standard-WSL2 amd64
+07:50:32.349 INFO  Communicating with SonarQube Community Build 26.10.0.133078
+07:50:32.349 INFO  JRE provisioning: os[linux], arch[x86_64]
+07:50:34.188 INFO  Starting SonarScanner Engine...
+07:50:34.189 INFO  Java 21.0.12.1 Eclipse Adoptium (64-bit)
+07:50:35.342 INFO  Load global settings
+07:50:35.446 INFO  Load global settings (done) | time=102ms
+07:50:35.448 INFO  Server id: 243B8A4D-AaFAQ23wuoO0BJ0FONJK
+07:50:35.459 INFO  Loading required plugins
+07:50:35.459 INFO  Load plugins index
+07:50:35.471 INFO  Load plugins index (done) | time=12ms
+07:50:35.471 INFO  Load/download plugins
+07:50:35.756 INFO  Load/download plugins (done) | time=285ms
+07:50:36.078 INFO  Load project settings for component key: 'tiwap'
+07:50:36.091 INFO  Load project settings for component key: 'tiwap' (done) | time=14ms
+07:50:36.109 INFO  Process project properties
+07:50:36.125 INFO  Process project properties (done) | time=17ms
+07:50:36.137 INFO  Project key: tiwap
+07:50:36.137 INFO  Base dir: /usr/src
+07:50:36.137 INFO  Working dir: /tmp/.scannerwork
+07:50:36.302 INFO  Load quality profiles
+07:50:36.337 INFO  Load quality profiles (done) | time=35ms
+07:50:36.381 INFO  Load active rules
+07:50:36.541 INFO  Load active rules (done) | time=160ms
+07:50:36.548 INFO  Load analysis cache
+07:50:36.568 INFO  Load analysis cache | time=19ms
+07:50:36.685 INFO  Preprocessing files...
+07:50:37.661 INFO  8 languages detected in 84 preprocessed files (done) | time=975ms
+07:50:37.661 INFO  32 files ignored because of scm ignore settings
+07:50:37.665 INFO  Loading plugins for detected languages
+07:50:37.665 INFO  Load/download plugins
+07:50:38.444 INFO  Load/download plugins (done) | time=778ms
+07:50:38.611 INFO  Load project repositories
+07:50:38.723 INFO  Load project repositories (done) | time=112ms
+07:50:38.750 INFO  Indexing files...
+07:50:38.750 INFO  Project configuration:
+07:50:39.091 INFO  84 files indexed (done) | time=342ms
+07:50:39.092 INFO  Quality profile for css: Sonar way core
+07:50:39.092 INFO  Quality profile for docker: Sonar way core
+07:50:39.093 INFO  Quality profile for js: Sonar way core
+07:50:39.093 INFO  Quality profile for php: Sonar way core
+07:50:39.093 INFO  Quality profile for py: Sonar way core
+07:50:39.093 INFO  Quality profile for web: Sonar way core
+07:50:39.094 INFO  Quality profile for xml: Sonar way core
+07:50:39.094 INFO  Quality profile for yaml: Sonar way comprehensive
+07:50:39.094 INFO  ------------- Run sensors on module TIWAP
+07:50:39.128 INFO  Load metrics repository
+07:50:39.142 INFO  Load metrics repository (done) | time=14ms
+07:50:39.549 INFO  Reflections took 75 ms to scan 1 urls, producing 30 keys and 303 values
+07:50:39.978 INFO  Sensor IaC YAML File Type Classification Sensor [iac]
+07:50:39.990 INFO  Sensor IaC YAML File Type Classification Sensor [iac] (done) | time=11ms
+07:50:39.990 INFO  Sensor Python Sensor [python]
+07:50:39.993 WARN  Your code is analyzed as compatible with Python versions 3.10 through 3.14 by default. You can get a more precise analysis by setting the Python version or version range in your configuration via the parameter "sonar.python.version"
+07:50:40.676 INFO  Starting global symbols computation
+07:50:40.679 INFO  14 source files to be analyzed
+07:50:41.111 INFO  14/14 source files have been analyzed
+07:50:41.115 INFO  Finished step global symbols computation in 435ms
+07:50:41.155 INFO  Starting rules execution
+07:50:41.156 INFO  14 source files to be analyzed
+07:50:42.198 INFO  14/14 source files have been analyzed
+07:50:42.199 INFO  Finished step rules execution in 1043ms
+07:50:42.199 INFO  The Python analyzer was able to leverage cached data from previous analyses for 0 out of 14 files. These files were not parsed.
+07:50:42.201 INFO  Sensor Python Sensor [python] (done) | time=2211ms
+07:50:42.202 INFO  Sensor Cobertura Sensor for Python coverage [python]
+07:50:42.554 INFO  Sensor Cobertura Sensor for Python coverage [python] (done) | time=352ms
+07:50:42.554 INFO  Sensor PythonXUnitSensor [python]
+07:50:42.831 INFO  Sensor PythonXUnitSensor [python] (done) | time=276ms
+07:50:42.831 INFO  Sensor Python Dependency Sensor [python]
+07:50:42.840 INFO  Sensor Python Dependency Sensor [python] (done) | time=9ms
+07:50:42.840 INFO  Sensor HTML [web]
+07:50:43.391 INFO  Sensor HTML [web] (done) | time=551ms
+07:50:43.391 INFO  Sensor PHP sensor [php]
+07:50:43.457 INFO  Starting PHP symbol indexer
+07:50:43.458 INFO  2 source files to be analyzed
+07:50:43.486 INFO  2/2 source files have been analyzed
+07:50:43.486 INFO  Cached information of global symbols will be used for 0 out of 2 files. Global symbols were recomputed for the remaining files.
+07:50:43.503 INFO  Starting PHP rules
+07:50:43.503 INFO  2 source files to be analyzed
+07:50:43.533 INFO  2/2 source files have been analyzed
+07:50:43.533 INFO  The PHP analyzer was able to leverage cached data from previous analyses for 0 out of 2 files. These files were not parsed.
+07:50:43.533 INFO  Sensor PHP sensor [php] (done) | time=141ms
+07:50:43.533 INFO  Sensor Analyzer for "php.ini" files [php]
+07:50:43.535 INFO  Sensor Analyzer for "php.ini" files [php] (done) | time=1ms
+07:50:43.535 INFO  Sensor PHPUnit report sensor [php]
+07:50:43.535 INFO  No PHPUnit tests reports provided (see 'sonar.php.tests.reportPath' property)
+07:50:43.535 INFO  No PHPUnit coverage reports provided (see 'sonar.php.coverage.reportPaths' property)
+07:50:43.545 INFO  Sensor PHPUnit report sensor [php] (done) | time=9ms
+07:50:43.545 INFO  Sensor IaC CloudFormation Sensor [iac]
+07:50:43.546 INFO  There are no files to be analyzed for the CloudFormation language
+07:50:43.546 INFO  Sensor IaC CloudFormation Sensor [iac] (done) | time=0ms
+07:50:43.546 INFO  Sensor IaC cfn-lint report Sensor [iac]
+07:50:43.546 INFO  Sensor IaC cfn-lint report Sensor [iac] (done) | time=0ms
+07:50:43.546 INFO  Sensor IaC Kustomization Sensor [iac]
+07:50:43.547 INFO  Sensor IaC Kustomization Sensor [iac] (done) | time=0ms
+07:50:43.547 INFO  Sensor IaC hadolint report Sensor [iac]
+07:50:43.547 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=0ms
+07:50:43.547 INFO  Sensor Java Config Sensor [iac]
+07:50:43.547 INFO  There are no files to be analyzed for the Java language
+07:50:43.547 INFO  Sensor Java Config Sensor [iac] (done) | time=0ms
+07:50:43.547 INFO  Sensor IaC Docker Sensor [iac]
+07:50:43.597 INFO  1 source file to be analyzed
+07:50:43.630 INFO  1/1 source file has been analyzed
+07:50:43.631 INFO  Sensor IaC Docker Sensor [iac] (done) | time=84ms
+07:50:43.631 INFO  Sensor IaC Kubernetes Sensor [iac]
+07:50:43.688 INFO  There are no files to be analyzed for the Kubernetes language
+07:50:43.689 INFO  Sensor IaC Kubernetes Sensor [iac] (done) | time=57ms
+07:50:43.689 INFO  Sensor TextAndSecretsSensor [text]
+07:50:43.702 INFO  Available processors: 32
+07:50:43.702 INFO  Using 32 threads for analysis.
+07:50:43.912 INFO  The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test", "tests", "mock" or "mocks"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+07:50:43.928 INFO  Start fetching files for the text and secrets analysis
+07:50:43.934 INFO  Using Git CLI to retrieve dirty files
+07:50:43.946 WARN  Retrieving only language associated files, make sure to run the analysis inside a git repository to make use of inclusions specified via "sonar.text.inclusions"
+07:50:43.946 INFO  Starting the text and secrets analysis
+07:50:43.947 INFO  52 source files to be analyzed for the text and secrets analysis
+07:50:44.017 INFO  52/52 source files have been analyzed for the text and secrets analysis
+07:50:44.017 INFO  Skipped 1 file(s) in the secrets analysis due to automatic test file detection
+07:50:44.021 INFO  Sensor TextAndSecretsSensor [text] (done) | time=332ms
+07:50:44.025 INFO  ------------- Run sensors on project
+07:50:44.190 INFO  Sensor JavaScript/TypeScript/CSS analysis [javascript]
+07:50:44.393 INFO  Detected os: Linux arch: amd64 alpine: false. Platform: LINUX_X64
+07:50:44.393 INFO  Deploy location /opt/sonar-scanner/.sonar/js/node-runtime, tagetRuntime: /opt/sonar-scanner/.sonar/js/node-runtime/node,  version: /opt/sonar-scanner/.sonar/js/node-runtime/version.txt
+07:50:46.752 INFO  Using embedded Node.js runtime.
+07:50:46.752 INFO  Using Node.js executable: '/opt/sonar-scanner/.sonar/js/node-runtime/node'.
+07:50:48.530 INFO  Memory configuration: OS (15812 MB), Node.js (4288 MB).
+07:50:48.544 INFO  gRPC analyze-project server listening on 127.0.0.1:35955
+07:50:48.673 INFO  Plugin version: [14.0.0.46108]
+07:50:51.134 WARN  Failed to parse file [templates/vulnerabilities/xml-external-entities.html] at line 25: Unexpected token (25:40)
+07:50:51.246 INFO  Found 0 tsconfig.json file(s): []
+07:50:51.246 INFO  34 source files to be analyzed
+07:50:51.247 INFO  Analyzing 1 file(s) using default options [lib: lib.esnext.d.ts, lib.dom.d.ts]
+07:50:51.247 INFO  34/34 source files have been analyzed
+07:50:51.263 INFO  Hit the cache for 0 out of 33
+07:50:51.263 INFO  Miss the cache for 33 out of 33: ANALYSIS_MODE_INELIGIBLE [33/33]
+07:50:51.263 INFO  Sensor JavaScript/TypeScript/CSS analysis [javascript] (done) | time=7072ms
+07:50:51.263 INFO  Sensor IaC Project Sensor [iac]
+07:50:51.264 INFO  Sensor IaC Project Sensor [iac] (done) | time=1ms
+07:50:51.265 INFO  Sensor Zero Coverage Sensor
+07:50:51.271 INFO  Sensor Zero Coverage Sensor (done) | time=7ms
+07:50:51.272 INFO  ------------- Gather SCA dependencies on project
+07:50:51.277 INFO  Dependency analysis skipped
+07:50:51.286 INFO  SCM Publisher SCM provider for this project is: git
+07:50:51.287 INFO  SCM Publisher 1 source file to be analyzed
+07:50:51.392 WARN  Thread[#165,ForkJoinPool.commonPool-worker-1,5,main]: got smaller file timestamp on /usr/src (C:\), /usr/src/.git: 2026-10-16T07:50:51Z < 2026-10-16T07:50:51.4495715Z. Aborting measurement at resolution PT0.5504285S.
+07:50:51.790 INFO  SCM Publisher 0/1 source files have been analyzed (done) | time=502ms
+07:50:51.790 WARN  Missing blame information for the following files:
+07:50:51.790 WARN    * vulnerabilities/SQLi.py
+07:50:51.790 WARN  This may lead to missing/broken features in SonarQube
+07:50:51.795 INFO  CPD Executor 7 files had no CPD blocks
+07:50:51.795 INFO  CPD Executor Calculating CPD for 43 files
+07:50:51.825 INFO  CPD Executor CPD calculation finished (done) | time=29ms
+07:50:51.877 INFO  SCM revision ID '1f9d2ac01b19c86ed20242fce5556ea77417d2a9'
+07:50:52.262 INFO  Analysis report generated in 429ms, dir size=425.0 kB
+07:50:52.352 INFO  Analysis report compressed in 89ms, zip size=190.8 kB
+07:50:52.404 INFO  Analysis report uploaded in 52ms
+07:50:52.405 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://sonarqube:9000/dashboard?id=tiwap
+07:50:52.405 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+07:50:52.405 INFO  More about the report processing at http://sonarqube:9000/api/ce/task?id=646baf3d-9bec-421d-ab41-7d63a1febcd1
+07:50:52.527 INFO  Analysis total time: 18.297 s
+07:50:52.528 INFO  SonarScanner Engine completed successfully
+07:50:52.564 INFO  EXECUTION SUCCESS
+07:50:52.564 INFO  Total time: 21.469s
+
+Code de sortie : 0

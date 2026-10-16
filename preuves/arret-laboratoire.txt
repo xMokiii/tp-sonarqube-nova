@@ -1,0 +1,23 @@
+Commande : docker compose -f compose.yaml down
+
+ Container tp-sonarqube-nova-sonarqube-1  Stopping
+ Container tp-sonarqube-nova-sonarqube-1  Stopped
+ Container tp-sonarqube-nova-sonarqube-1  Removing
+ Container tp-sonarqube-nova-sonarqube-1  Removed
+ Container tp-sonarqube-nova-db-1  Stopping
+ Container tp-sonarqube-nova-db-1  Stopped
+ Container tp-sonarqube-nova-db-1  Removing
+ Container tp-sonarqube-nova-db-1  Removed
+ Network tp-sonarqube-nova_sonarnet  Removing
+ Network tp-sonarqube-nova_sonarnet  Removed
+
+Code de sortie : 0
+
+Conteneurs du laboratoire apres arret :
+NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+
+Volumes conserves :
+tp-sonarqube-nova_postgresql_data
+tp-sonarqube-nova_sonarqube_data
+tp-sonarqube-nova_sonarqube_extensions
+tp-sonarqube-nova_sonarqube_logs

@@ -1,0 +1,36 @@
+test_existing_user (test_sql_injection.SQLInjectionTests.test_existing_user) ... ok
+test_injection_cannot_return_other_users (test_sql_injection.SQLInjectionTests.test_injection_cannot_return_other_users) ... FAIL
+test_quote_is_treated_as_data (test_sql_injection.SQLInjectionTests.test_quote_is_treated_as_data) ... FAIL
+test_unknown_user (test_sql_injection.SQLInjectionTests.test_unknown_user) ... ok
+
+======================================================================
+FAIL: test_injection_cannot_return_other_users (test_sql_injection.SQLInjectionTests.test_injection_cannot_return_other_users)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\morli\Perso\tp-sonarqube-nova\tests\test_sql_injection.py", line 46, in test_injection_cannot_return_other_users
+    self.assertEqual(self.sqli.sqli_medium("1' OR '1'='1"), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [(1, 'alice'), (2, 'bob')] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+(1, 'alice')
+
+- [(1, 'alice'), (2, 'bob')]
++ []
+
+======================================================================
+FAIL: test_quote_is_treated_as_data (test_sql_injection.SQLInjectionTests.test_quote_is_treated_as_data)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\morli\Perso\tp-sonarqube-nova\tests\test_sql_injection.py", line 43, in test_quote_is_treated_as_data
+    self.assertEqual(self.sqli.sqli_medium("1'"), [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: OperationalError('unrecognized token: "\'1\'\'"') != []
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.043s
+
+FAILED (failures=2)
+
+Code de sortie : 1

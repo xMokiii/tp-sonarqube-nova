@@ -1,0 +1,14 @@
+--- a/vulnerabilities/SQLi.py
++++ b/vulnerabilities/SQLi.py
+@@ -37,9 +37,9 @@
+     cur = dbmanager.get_db_connection().cursor()
+ 
+     try:
+-        stmt = "SELECT userid, username FROM users WHERE userid='%s'" % (str(userid))
++        stmt = "SELECT userid, username FROM users WHERE userid = ?"
+ 
+-        result = cur.execute(stmt)
++        result = cur.execute(stmt, (str(userid),))
+ 
+     except sqlite3.OperationalError as e:
+         return e
