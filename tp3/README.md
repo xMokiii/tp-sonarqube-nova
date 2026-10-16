@@ -10,6 +10,9 @@ L'automatisation utilise **GitHub Actions**, selon le choix de l'étudiant.
 - [Capture de TIWAP](preuves/tiwap-local.png)
 - [Workflow GitHub Actions](../.github/workflows/dast.yml)
 - [Exécutions GitHub Actions](https://github.com/xMokiii/tp-sonarqube-nova/actions/workflows/dast.yml)
+- [Exécution validée et artefact](https://github.com/xMokiii/tp-sonarqube-nova/actions/runs/38882931903)
+- [Capture du workflow réussi](preuves/github-actions-workflow.png)
+- [Archive des livrables](../livrables-tp3-zap.zip)
 
 ## 1. Démarrer le laboratoire local
 
@@ -72,6 +75,10 @@ Pour les retrouver, ouvrir **Actions > TP3 - DAST OWASP ZAP**, choisir une
 exécution, puis télécharger l'artefact `tp3-zap-<run_id>-<tentative>`.
 Il contient les rapports HTML/JSON, la synthèse et les journaux de démarrage/scan.
 Les règles de risque ZAP ne remplacent pas la qualification métier.
+
+La première exécution réelle a réussi. Ses rapports CI contiennent 16 entrées
+(4 moyennes, 7 faibles, 5 informationnelles), 13 règles et 39 occurrences. La
+différence avec le scan local est documentée dans le compte rendu.
 
 ## 4. Arrêter le laboratoire local
 

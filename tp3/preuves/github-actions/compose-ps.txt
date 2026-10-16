@@ -1,0 +1,4 @@
+NAME                         IMAGE                            COMMAND                  SERVICE   CREATED              STATUS              PORTS
+tp3-gh-38882931903-1-app-1   tp3-gh-38882931903-1-app         "python app.py"          app       34 seconds ago       Up 33 seconds       5000/tcp
+tp3-gh-38882931903-1-db-1    mongo:4.4                        "docker-entrypoint.s…"   db        About a minute ago   Up About a minute   27017/tcp
+tp3-gh-38882931903-1-zap-1   ghcr.io/zaproxy/zaproxy:stable   "sleep infinity"         zap       34 seconds ago       Up 33 seconds       

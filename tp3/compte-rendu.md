@@ -2,7 +2,7 @@
 
 **Contexte :** NOVA SERVICES — laboratoire TIWAP local.
 **Date de préparation :** 16 octobre 2026.
-**État :** scan local terminé, rapports vérifiés et analyse rédigée. Intégration GitHub Actions en cours dans `xMokiii/tp-sonarqube-nova`.
+**État :** scan local et workflow GitHub Actions réussis, rapports et preuves disponibles dans `xMokiii/tp-sonarqube-nova`.
 
 ## 1. Objectif et méthode
 
@@ -215,8 +215,41 @@ dans le résumé de l'exécution. Les rapports HTML/JSON, la synthèse et les jo
 sont publiés comme artefacts pendant sept jours, y compris en cas d'échec.
 
 Les actions officielles checkout et upload-artifact sont épinglées sur leurs
-commits vérifiés. Les preuves de l'exécution distante seront ajoutées après
-le lancement réel du workflow ; elles ne sont pas remplacées par le scan local.
+commits vérifiés. Le workflow a aussi été validé par actionlint avant publication.
+
+### Preuve de l'exécution GitHub
+
+L'[exécution GitHub Actions 38882931903](https://github.com/xMokiii/tp-sonarqube-nova/actions/runs/38882931903)
+a réussi sur la branche `tp3-zap-actions`, pour le commit
+`0050720079a541156f9a9477e776f65bda2016a6`. Toutes les étapes du job sont au statut
+`success`, y compris le scan et la publication des artefacts. Le code ZAP est `2` :
+le job est vert et affiche explicitement un avertissement concernant les alertes.
+
+L'artefact `tp3-zap-38882931903-1` a été téléchargé et son empreinte SHA-256
+vérifiée contre celle publiée par GitHub :
+`f85fdb94d7e796e29f68578bd32649e661ba854e97184878f5bfc6936fbd7d5e`.
+Il contient les rapports HTML/JSON, la synthèse, le code de sortie et les journaux.
+Les artefacts du service expirent après sept jours ; une copie durable est
+conservée avec le rendu.
+
+| Exécution | Risque moyen | Faible | Informationnel | Entrées | Règles distinctes | Occurrences |
+|---|---:|---:|---:|---:|---:|---:|
+| Scan local | 4 | 7 | 4 | 15 | 13 | 39 |
+| Scan GitHub Actions | 4 | 7 | 5 | 16 | 13 | 39 |
+
+Le scan CI comporte en plus la sous-alerte informationnelle `10049-1`,
+`Non-Storable Content`, qui décrit le cache d'une réponse. Ce constat ne prouve
+pas à lui seul une vulnérabilité. Les résultats des deux scans sont conservés
+séparément et ne sont pas fusionnés dans un compteur unique.
+
+- [Métadonnées GitHub : commit, étapes, résultat et artefact](preuves/github-actions/github-actions.json)
+- [Archive authentique de l'artefact](preuves/github-actions/tp3-zap-38882931903-1.zip)
+- [Rapport HTML CI](preuves/github-actions/zap-report.html) et [JSON CI](preuves/github-actions/zap-report.json)
+- [Synthèse JSON CI](preuves/github-actions/zap-summary.json)
+
+Capture réelle de la page GitHub : succès du job, avertissement ZAP et artefact.
+
+![Workflow GitHub Actions réussi et artefact](preuves/github-actions-workflow.png)
 
 Sources : [ZAP Baseline Scan](https://www.zaproxy.org/docs/docker/baseline-scan/),
 [permissions du checkout](https://github.com/actions/checkout#recommended-permissions),
