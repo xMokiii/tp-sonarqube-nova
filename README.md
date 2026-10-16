@@ -1,5 +1,9 @@
 # TP SonarQube — NOVA SERVICES
 
+Le [TP3 — DAST avec OWASP ZAP](tp3/README.md) complète ce travail : laboratoire
+TIWAP, rapports, analyse des alertes et automatisation avec
+[GitHub Actions](https://github.com/xMokiii/tp-sonarqube-nova/actions/workflows/dast.yml).
+
 Analyse statique de TIWAP avec SonarQube et PostgreSQL dans Docker, revue des
 résultats et correction ciblée d'une injection SQL, sans lancer l'application
 vulnérable.

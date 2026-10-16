@@ -1,0 +1,74 @@
+name: TP3 - DAST OWASP ZAP
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dast:
+    name: TIWAP - ZAP Baseline
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Recuperer le depot
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Localiser le laboratoire TIWAP
+        id: lab
+        shell: bash
+        run: |
+          if [ -f tp3/TIWAP/docker-compose.yml ]; then
+            echo "directory=tp3/TIWAP" >> "$GITHUB_OUTPUT"
+          elif [ -f TIWAP/docker-compose.yml ]; then
+            echo "directory=TIWAP" >> "$GITHUB_OUTPUT"
+          elif [ -f docker-compose.yml ]; then
+            echo "directory=." >> "$GITHUB_OUTPUT"
+          else
+            echo "::error::Le fichier docker-compose.yml de TIWAP est introuvable."
+            exit 3
+          fi
+
+      - name: Verifier Docker
+        run: |
+          docker info
+          docker compose version
+
+      - name: Demarrer TIWAP et executer ZAP
+        working-directory: ${{ steps.lab.outputs.directory }}
+        shell: bash
+        run: |
+          set +e
+          sh ci/run-dast.sh
+          status=$?
+          set -e
+          case "$status" in
+            0) ;;
+            2) echo "::warning::ZAP a termine avec des alertes WARN. Consulter les rapports." ;;
+            *) exit "$status" ;;
+          esac
+
+      - name: Afficher la synthese
+        if: always() && steps.lab.outputs.directory != ''
+        working-directory: ${{ steps.lab.outputs.directory }}
+        shell: bash
+        run: |
+          if [ -f reports/zap-summary.md ]; then
+            cat reports/zap-summary.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Le scan n'a pas produit de synthese valide. Consulter les journaux." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Conserver les rapports et les journaux
+        if: always() && steps.lab.outputs.directory != ''
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: tp3-zap-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ steps.lab.outputs.directory }}/reports/
+          if-no-files-found: error
+          retention-days: 7

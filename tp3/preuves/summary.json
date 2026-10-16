@@ -1,0 +1,24 @@
+{
+  "zap_version": "2.17.0",
+  "created_utc": "2026-10-16T09:33:00.242728652Z",
+  "target": "http://app:5000",
+  "exit_code": 2,
+  "alert_entries": 15,
+  "distinct_rule_ids": 13,
+  "instances": 39,
+  "risk_counts": {
+    "informationnel": 4,
+    "faible": 7,
+    "moyen": 4
+  },
+  "reports": {
+    "zap-report.html": {
+      "bytes": 96933,
+      "sha256": "2e13d72631e6029ec9bbb6179530b4872bc849fe6423e3437565d1ad341c7ff0"
+    },
+    "zap-report.json": {
+      "bytes": 38226,
+      "sha256": "d8912f5838f645009a05a0d609605a21000cbc18247c65970f6b6f5dd3df188f"
+    }
+  }
+}
