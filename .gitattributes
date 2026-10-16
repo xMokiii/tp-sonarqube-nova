@@ -1,0 +1,4 @@
+.github/workflows/*.yml text eol=lf
+tp3/TIWAP/ci/*.sh text eol=lf
+tp3/TIWAP/ci/*.py text eol=lf
+tp3/preuves/** -text

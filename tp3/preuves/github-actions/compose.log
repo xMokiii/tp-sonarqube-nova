@@ -1,0 +1,210 @@
+app-1  |  * Serving Flask app "app" (lazy loading)
+app-1  |  * Environment: production
+app-1  |    WARNING: This is a development server. Do not use it in a production deployment.
+app-1  |    Use a production WSGI server instead.
+app-1  |  * Debug mode: on
+app-1  |  * Running on all addresses.
+db-1   | about to fork child process, waiting until server is ready for connections.
+db-1   | forked process: 28
+db-1   | 
+app-1  |    WARNING: This is a development server. Do not use it in a production deployment.
+app-1  |  * Running on http://172.18.0.3:5000/ (Press CTRL+C to quit)
+app-1  |  * Restarting with stat
+app-1  |  * Debugger is active!
+app-1  |  * Debugger PIN: 145-269-073
+app-1  | 127.0.0.1 - - [16/Oct/2026 09:49:05] "GET / HTTP/1.1" 200 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "GET / HTTP/1.1" 200 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "GET / HTTP/1.1" 200 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "GET /robots.txt HTTP/1.1" 200 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "GET /index.css HTTP/1.1" 200 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+app-1  | Traceback (most recent call last):
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+app-1  |     return self.wsgi_app(environ, start_response)
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.257+00:00"},"s":"I",  "c":"CONTROL",  "id":20698,   "ctx":"main","msg":"***** SERVER RESTARTED *****"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.258+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+app-1  |     response = self.handle_exception(e)
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+app-1  |     reraise(exc_type, exc_value, tb)
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+app-1  |     raise value
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+app-1  |     response = self.full_dispatch_request()
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+app-1  |     rv = self.handle_user_exception(e)
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+app-1  |     reraise(exc_type, exc_value, tb)
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+app-1  |     raise value
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+app-1  |     rv = self.dispatch_request()
+app-1  |   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+app-1  |     return self.view_functions[rule.endpoint](**req.view_args)
+app-1  |   File "/app/app.py", line 67, in login
+app-1  |     if dbm.check_login(username=username, password=password):
+app-1  |   File "/app/helper/db_manager.py", line 45, in check_login
+app-1  |     password_db = data[1]
+app-1  | TypeError: 'NoneType' object is not subscriptable
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "[33mGET /usr/local/lib/python3.6/site-packages/flask/app.py HTTP/1.1[0m" 404 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "[33mGET /usr/local/lib/python3.6/site-packages/flask/_compat.py HTTP/1.1[0m" 404 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "[33mGET /app/app.py HTTP/1.1[0m" 404 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "[33mGET /app/helper/db_manager.py HTTP/1.1[0m" 404 -
+app-1  | 172.18.0.4 - - [16/Oct/2026 09:49:26] "[33mGET /login?btn=Confirm+Pin&pin=ZAP HTTP/1.1[0m" 404 -
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.262+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.263+00:00"},"s":"I",  "c":"STORAGE",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":28,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"1be75887e397"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.263+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"4.4.30","gitVersion":"4d7fa6a6260d25c5caa971dce10561690cb79dea","openSSLVersion":"OpenSSL 1.1.1f  31 Mar 2020","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2004","distarch":"x86_64","target_arch":"x86_64"}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.263+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"20.04"}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.263+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"127.0.0.1","port":27017,"tls":{"mode":"disabled"}},"processManagement":{"fork":true,"pidFilePath":"/tmp/docker-entrypoint-temp-mongod.pid"},"systemLog":{"destination":"file","logAppend":true,"path":"/proc/1/fd/1"}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.264+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.264+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=7482M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress,compact_progress],"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.496+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144116:496298][28:0x7f47cb610cc0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global recovery timestamp: (0, 0)"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.496+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144116:496350][28:0x7f47cb610cc0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global oldest timestamp: (0, 0)"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.499+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":235}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.499+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.503+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.505+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.505+00:00"},"s":"W",  "c":"CONTROL",  "id":22178,   "ctx":"initandlisten","msg":"/sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'","tags":["startupWarnings"]}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.505+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"admin.system.version","uuidDisposition":"provided","uuid":{"uuid":{"$uuid":"3fa11126-6623-4e15-a067-abf40c44b6de"}},"options":{"uuid":{"$uuid":"3fa11126-6623-4e15-a067-abf40c44b6de"}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.511+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"admin.system.version","index":"_id_","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.511+00:00"},"s":"I",  "c":"COMMAND",  "id":20459,   "ctx":"initandlisten","msg":"Setting featureCompatibilityVersion","attr":{"newVersion":"4.4"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.511+00:00"},"s":"I",  "c":"STORAGE",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.512+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"local.startup_log","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"81c13600-1da9-41f2-ac74-b4e11ea7c7ab"}},"options":{"capped":true,"size":10485760}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.517+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"local.startup_log","index":"_id_","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.517+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.517+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.519+00:00"},"s":"I",  "c":"CONTROL",  "id":20712,   "ctx":"LogicalSessionCacheReap","msg":"Sessions collection is not set up; waiting until next sessions reap interval","attr":{"error":"NamespaceNotFound: config.system.sessions does not exist"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.519+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"LogicalSessionCacheRefresh","msg":"createCollection","attr":{"namespace":"config.system.sessions","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"f649a5d4-9338-48b7-a792-6cce9473523b"}},"options":{}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.519+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.519+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"127.0.0.1"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.519+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+db-1   | child process started successfully, parent exiting
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.526+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"config.system.sessions","index":"_id_","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.526+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"config.system.sessions","index":"lsidTTLIndex","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.572+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:42470","connectionId":1,"connectionCount":1}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.572+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"127.0.0.1:42470","client":"conn1","doc":{"application":{"name":"MongoDB Shell"},"driver":{"name":"MongoDB Internal Client","version":"4.4.30"},"os":{"type":"Linux","name":"Ubuntu","architecture":"x86_64","version":"20.04"}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.577+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"127.0.0.1:42470","connectionId":1,"connectionCount":0}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.695+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:42472","connectionId":2,"connectionCount":1}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.695+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"127.0.0.1:42472","client":"conn2","doc":{"application":{"name":"MongoDB Shell"},"driver":{"name":"MongoDB Internal Client","version":"4.4.30"},"os":{"type":"Linux","name":"Ubuntu","architecture":"x86_64","version":"20.04"}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.724+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn2","msg":"createCollection","attr":{"namespace":"admin.system.users","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"05f6606a-f255-4c62-b5a1-76c64c056ab7"}},"options":{}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.730+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn2","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"admin.system.users","index":"_id_","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.730+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn2","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"admin.system.users","index":"user_1_db_1","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+db-1   | Successfully added user: {
+db-1   | 	"user" : "username",
+db-1   | 	"roles" : [
+db-1   | 		{
+db-1   | 			"role" : "root",
+db-1   | 			"db" : "admin"
+db-1   | 		}
+db-1   | 	]
+db-1   | }
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.732+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"127.0.0.1:42472","connectionId":2,"connectionCount":0}}
+db-1   | 
+db-1   | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+db-1   | 
+db-1   | 
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.749+00:00"},"s":"I",  "c":"CONTROL",  "id":20698,   "ctx":"main","msg":"***** SERVER RESTARTED *****"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.751+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.751+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+db-1   | killing process with pid: 28
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"CONTROL",  "id":23377,   "ctx":"SignalHandler","msg":"Received signal","attr":{"signal":15,"error":"Terminated"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"CONTROL",  "id":23378,   "ctx":"SignalHandler","msg":"Signal was sent by kill(2)","attr":{"pid":90,"uid":999}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"CONTROL",  "id":23381,   "ctx":"SignalHandler","msg":"will terminate after current cmd ends"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"SignalHandler","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":10000}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"SignalHandler","msg":"Shutting down the MirrorMaestro"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"SignalHandler","msg":"Shutting down the WaitForMajorityService"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"CONTROL",  "id":4784903, "ctx":"SignalHandler","msg":"Shutting down the LogicalSessionCache"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"NETWORK",  "id":20562,   "ctx":"SignalHandler","msg":"Shutdown: going to close listening sockets"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"NETWORK",  "id":23017,   "ctx":"listener","msg":"removing socket file","attr":{"path":"/tmp/mongodb-27017.sock"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"SignalHandler","msg":"Shutting down the global connection pool"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"STORAGE",  "id":4784906, "ctx":"SignalHandler","msg":"Shutting down the FlowControlTicketholder"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"-",        "id":20520,   "ctx":"SignalHandler","msg":"Stopping further Flow Control ticket acquisitions."}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"STORAGE",  "id":4784908, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToAbortExpiredTransactions"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.752+00:00"},"s":"I",  "c":"STORAGE",  "id":4784934, "ctx":"SignalHandler","msg":"Shutting down the PeriodicThreadToDecreaseSnapshotHistoryCachePressure"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"REPL",     "id":4784909, "ctx":"SignalHandler","msg":"Shutting down the ReplicationCoordinator"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"SHARDING", "id":4784910, "ctx":"SignalHandler","msg":"Shutting down the ShardingInitializationMongoD"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"REPL",     "id":4784911, "ctx":"SignalHandler","msg":"Enqueuing the ReplicationStateTransitionLock for shutdown"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"-",        "id":4784912, "ctx":"SignalHandler","msg":"Killing all operations for shutdown"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"-",        "id":4695300, "ctx":"SignalHandler","msg":"Interrupted all currently running operations","attr":{"opsKilled":3}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"COMMAND",  "id":4784913, "ctx":"SignalHandler","msg":"Shutting down all open transactions"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"REPL",     "id":4784914, "ctx":"SignalHandler","msg":"Acquiring the ReplicationStateTransitionLock for shutdown"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"INDEX",    "id":4784915, "ctx":"SignalHandler","msg":"Shutting down the IndexBuildsCoordinator"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"REPL",     "id":4784916, "ctx":"SignalHandler","msg":"Reacquiring the ReplicationStateTransitionLock for shutdown"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"REPL",     "id":4784917, "ctx":"SignalHandler","msg":"Attempting to mark clean shutdown"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"SignalHandler","msg":"Shutting down the ReplicaSetMonitor"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"SignalHandler","msg":"Shutting down the MigrationUtilExecutor"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":4784927, "ctx":"SignalHandler","msg":"Shutting down the HealthLog"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":4784929, "ctx":"SignalHandler","msg":"Acquiring the global lock for shutdown"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":4784930, "ctx":"SignalHandler","msg":"Shutting down the storage engine"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":22320,   "ctx":"SignalHandler","msg":"Shutting down journal flusher thread"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":22321,   "ctx":"SignalHandler","msg":"Finished shutting down journal flusher thread"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":20282,   "ctx":"SignalHandler","msg":"Deregistering all the collections"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":22261,   "ctx":"SignalHandler","msg":"Timestamp monitor shutting down"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":22317,   "ctx":"SignalHandler","msg":"WiredTigerKVEngine shutting down"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":22318,   "ctx":"SignalHandler","msg":"Shutting down session sweeper thread"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":22319,   "ctx":"SignalHandler","msg":"Finished shutting down session sweeper thread"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":22322,   "ctx":"SignalHandler","msg":"Shutting down checkpoint thread"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.753+00:00"},"s":"I",  "c":"STORAGE",  "id":22323,   "ctx":"SignalHandler","msg":"Finished shutting down checkpoint thread"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.754+00:00"},"s":"I",  "c":"STORAGE",  "id":4795902, "ctx":"SignalHandler","msg":"Closing WiredTiger","attr":{"closeConfig":"leak_memory=true,"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.755+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"SignalHandler","msg":"WiredTiger message","attr":{"message":"[1792144116:755171][28:0x7f47cb60f700], close_ckpt: [WT_VERB_CHECKPOINT_PROGRESS] saving checkpoint snapshot min: 47, snapshot max: 47 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 1"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.761+00:00"},"s":"I",  "c":"STORAGE",  "id":4795901, "ctx":"SignalHandler","msg":"WiredTiger closed","attr":{"durationMillis":7}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.761+00:00"},"s":"I",  "c":"STORAGE",  "id":22279,   "ctx":"SignalHandler","msg":"shutdown: removing fs lock..."}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.761+00:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"SignalHandler","msg":"Dropping the scope cache for shutdown"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.761+00:00"},"s":"I",  "c":"FTDC",     "id":4784926, "ctx":"SignalHandler","msg":"Shutting down full-time data capture"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.761+00:00"},"s":"I",  "c":"FTDC",     "id":20626,   "ctx":"SignalHandler","msg":"Shutting down full-time diagnostic data capture"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.761+00:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"SignalHandler","msg":"Now exiting"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:36.761+00:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"SignalHandler","msg":"Shutting down","attr":{"exitCode":0}}
+db-1   | 
+db-1   | MongoDB init process complete; ready for start up.
+db-1   | 
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.769+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.771+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.772+00:00"},"s":"I",  "c":"STORAGE",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"1be75887e397"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.772+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"4.4.30","gitVersion":"4d7fa6a6260d25c5caa971dce10561690cb79dea","openSSLVersion":"OpenSSL 1.1.1f  31 Mar 2020","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2004","distarch":"x86_64","target_arch":"x86_64"}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.772+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"20.04"}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.772+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*"},"security":{"authorization":"enabled"}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.772+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.772+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.772+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=7482M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress,compact_progress],"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.972+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144117:972237][1:0x7f270e3e0cc0], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 1 through 2"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:37.997+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144117:997690][1:0x7f270e3e0cc0], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 2 through 2"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.021+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144118:21508][1:0x7f270e3e0cc0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Main recovery loop: starting at 1/31872 to 2/256"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.055+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144118:55909][1:0x7f270e3e0cc0], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 1 through 2"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.074+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144118:74719][1:0x7f270e3e0cc0], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 2 through 2"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.091+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144118:91726][1:0x7f270e3e0cc0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global recovery timestamp: (0, 0)"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.091+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144118:91744][1:0x7f270e3e0cc0], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global oldest timestamp: (0, 0)"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.092+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1792144118:92658][1:0x7f270e3e0cc0], WT_SESSION.checkpoint: [WT_VERB_CHECKPOINT_PROGRESS] saving checkpoint snapshot min: 1, snapshot max: 1 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 7"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.094+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":322}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.094+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.098+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.098+00:00"},"s":"W",  "c":"CONTROL",  "id":22178,   "ctx":"initandlisten","msg":"/sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'","tags":["startupWarnings"]}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.104+00:00"},"s":"I",  "c":"STORAGE",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.106+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.106+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.108+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.108+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.108+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.532+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:42488","connectionId":1,"connectionCount":1}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.533+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"127.0.0.1:42488","client":"conn1","doc":{"application":{"name":"MongoDB Shell"},"driver":{"name":"MongoDB Internal Client","version":"4.4.30"},"os":{"type":"Linux","name":"Ubuntu","architecture":"x86_64","version":"20.04"}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.553+00:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn1","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"username","authenticationDatabase":"admin","remote":"127.0.0.1:42488","extraInfo":{}}}
+db-1   | {"t":{"$date":"2026-10-16T09:48:38.558+00:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"127.0.0.1:42488","connectionId":1,"connectionCount":0}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.106+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.18.0.3:40800","connectionId":2,"connectionCount":1}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.106+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"172.18.0.3:40800","client":"conn2","doc":{"driver":{"name":"PyMongo","version":"3.11.2"},"os":{"type":"Linux","name":"Linux","architecture":"x86_64","version":"6.17.0-1022-azure"},"platform":"CPython 3.6.15.final.0"}}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.107+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.18.0.3:40810","connectionId":3,"connectionCount":2}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.107+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.18.0.3:40822","connectionId":4,"connectionCount":3}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.107+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"172.18.0.3:40810","client":"conn3","doc":{"driver":{"name":"PyMongo","version":"3.11.2"},"os":{"type":"Linux","name":"Linux","architecture":"x86_64","version":"6.17.0-1022-azure"},"platform":"CPython 3.6.15.final.0"}}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.108+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"172.18.0.3:40822","client":"conn4","doc":{"driver":{"name":"PyMongo","version":"3.11.2"},"os":{"type":"Linux","name":"Linux","architecture":"x86_64","version":"6.17.0-1022-azure"},"platform":"CPython 3.6.15.final.0"}}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.112+00:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn3","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"username","authenticationDatabase":"admin","remote":"172.18.0.3:40810","extraInfo":{}}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.113+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"conn3","msg":"createCollection","attr":{"namespace":"TIWAP.users","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"ee9d2d47-0a92-4fd4-89f6-c536611b7d1e"}},"options":{}}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.117+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"conn3","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"TIWAP.users","index":"_id_","commitTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.483+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.18.0.3:40836","connectionId":5,"connectionCount":4}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.483+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"172.18.0.3:40836","client":"conn5","doc":{"driver":{"name":"PyMongo","version":"3.11.2"},"os":{"type":"Linux","name":"Linux","architecture":"x86_64","version":"6.17.0-1022-azure"},"platform":"CPython 3.6.15.final.0"}}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.484+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.18.0.3:40840","connectionId":6,"connectionCount":5}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.485+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.18.0.3:40854","connectionId":7,"connectionCount":6}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.485+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"172.18.0.3:40840","client":"conn6","doc":{"driver":{"name":"PyMongo","version":"3.11.2"},"os":{"type":"Linux","name":"Linux","architecture":"x86_64","version":"6.17.0-1022-azure"},"platform":"CPython 3.6.15.final.0"}}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.485+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"172.18.0.3:40854","client":"conn7","doc":{"driver":{"name":"PyMongo","version":"3.11.2"},"os":{"type":"Linux","name":"Linux","architecture":"x86_64","version":"6.17.0-1022-azure"},"platform":"CPython 3.6.15.final.0"}}}
+db-1   | {"t":{"$date":"2026-10-16T09:49:03.489+00:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn6","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"username","authenticationDatabase":"admin","remote":"172.18.0.3:40840","extraInfo":{}}}

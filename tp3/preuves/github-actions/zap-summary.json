@@ -1,0 +1,14 @@
+{
+  "target": "http://app:5000",
+  "zap_version": "2.17.0",
+  "created_utc": "2026-10-16T09:49:29.478142690Z",
+  "alert_entries": 16,
+  "distinct_rule_ids": 13,
+  "instances": 39,
+  "risk_counts": {
+    "Informationnel": 5,
+    "Faible": 7,
+    "Moyen": 4,
+    "Eleve": 0
+  }
+}

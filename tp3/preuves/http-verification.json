@@ -1,0 +1,33 @@
+{
+  "homepage": {
+    "url": "http://127.0.0.1:5001",
+    "status": 200,
+    "headers": {
+      "Server": "Werkzeug/2.0.3 Python/3.6.15",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Security-Policy": null,
+      "X-Frame-Options": null,
+      "X-Content-Type-Options": null
+    }
+  },
+  "login": {
+    "username": "admin",
+    "status": 200,
+    "final_url": "http://127.0.0.1:5001/dashboard",
+    "dashboard_received": true
+  },
+  "anonymous_sql_page": {
+    "status": 200,
+    "final_url": "http://127.0.0.1:5001/",
+    "redirected_to_login": true
+  },
+  "invalid_login": {
+    "status": 500,
+    "traceback_exposed": true,
+    "sql_fragment": "SELECT username, password FROM users WHERE username = ?\", (username,))"
+  },
+  "sitemap": {
+    "status": 404,
+    "csp": null
+  }
+}

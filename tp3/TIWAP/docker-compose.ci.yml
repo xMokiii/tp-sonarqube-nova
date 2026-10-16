@@ -1,0 +1,11 @@
+# Run from the built image, without local development mounts or published ports.
+# Copy the reports out explicitly so the job can publish them as artifacts.
+services:
+  app:
+    ports: !reset []
+    volumes: !reset []
+  db:
+    # app.py initializes the laboratory data after MongoDB is ready.
+    volumes: !reset []
+  zap:
+    volumes: !reset []
